@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shapes</title>
+	<style>
+		body {
+			background-color: mediumTurquoise;
+			font-family: Trebuchet MS;
+			text-align: center;
+		}
+		img {
+			width: 200px;
+			height: auto;
+		}
+	    /* New style for the container of the boxes */
+	    .container {
+	        display: flex; /* Enables flex context for children */
+	        justify-content: center; /* Centers the boxes horizontally in the container */
+	        gap: 20px; /* Adds space between the boxes (e.g., 20px) */
+	        padding: 20px; /* Optional: Adds some space around the container */
+	    }
+	    /* Modified .box style */
+	    .box {
+			background-color: white;
+			padding: 20px;
+			width: 220px;
+			/* Removed 'margin: 0 auto;' as Flexbox handles centering now */
+		}
+	</style>
+</head>
+<body>
+	<h1>Shapes</h1>
+    <div class="container">
+    	<div class="box">
+			<a href="sewingmachine.usdz">
+				<img src="sewingmachine.png" alt="sewing machine" rel="ar">
+			</a>
+        	<p>Click the image to view in AR on an iPad or iPhone.</p>
+		</div>
+        
+<!--
+        <div class="box">
+			<a href="other_shape.usdz">
+				<img src="circle.png" alt="circle" rel="ar">
+			</a>
+        	<p>Click to view a different shape in AR.</p>
+		</div>
+-->        
+        </div>
+</body>
+</html>
