@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student AR Project</title>
+	<style>
+		body {
+			background-color: rgb(208, 208, 208);
+			font-family: Trebuchet MS;
+			text-align: center;
+		}
+		img {
+			width: 200px;
+			height: auto;
+		}
+	    /* New style for the container of the boxes */
+	    .container {
+	        display: flex; /* Enables flex context for children */
+	        justify-content: center; /* Centers the boxes horizontally in the container */
+	        gap: 20px; /* Adds space between the boxes (e.g., 20px) */
+	        padding: 20px; /* Optional: Adds some space around the container */
+	    }
+	    /* Modified .box style */
+	    .box {
+			background-color: white;
+			padding: 20px;
+			width: 220px;
+			/* Removed 'margin: 0 auto;' as Flexbox handles centering now */
+		}
+	</style>
+</head>
+<body>
+	<h1>Student AR Project</h1>
+    <div class="container">
+    	<div class="box">
+			<a href="astar2.reality">
+				<img src="placeholder.png" alt="placeholder" rel="ar">
+			</a>
+        	<p>Click the image to view in AR on an iPad or iPhone.</p>
+		</div>
+    
+    </div>
+</body>
+</html>
