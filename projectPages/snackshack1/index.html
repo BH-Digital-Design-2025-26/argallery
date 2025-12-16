@@ -1,43 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Student AR Project</title>
+
+	<title>SNACKSHACK AR Experience</title>
 	<style>
 		body {
-			background-color: rgb(208, 208, 208);
-			font-family: Trebuchet MS;
+			background-color:lightpink;
+			font-family: Times New Roman;
+			color:magenta; 
 			text-align: center;
 		}
 		img {
-			width: 200px;
+			width: 250px;
 			height: auto;
 		}
-	    /* New style for the container of the boxes */
-	    .container {
-	        display: flex; /* Enables flex context for children */
-	        justify-content: center; /* Centers the boxes horizontally in the container */
-	        gap: 20px; /* Adds space between the boxes (e.g., 20px) */
-	        padding: 20px; /* Optional: Adds some space around the container */
-	    }
-	    /* Modified .box style */
-	    .box {
-			background-color: white;
+		.box {
+			background-color: violet;
 			padding: 20px;
-			width: 220px;
-			/* Removed 'margin: 0 auto;' as Flexbox handles centering now */
+			width: 270px;
+			margin: 0 auto;
+			text-align: center;
 		}
 	</style>
 </head>
 <body>
-	<h1>Student AR Project</h1>
-    <div class="container">
-    	<div class="box">
-			<a href="snackshack1.reality">
-				<img src="placeholder.png" alt="placeholder" rel="ar">
-			</a>
-        	<p>Click the image to view in AR on an iPad or iPhone.</p>
-		</div>
-    
-    </div>
+
+	<h1>This is SnackShack's AR experience. Click the image to view in AR on an iPad or iPhone !</h1>
+	<div class="box">
+		<a href="snackshack1.reality">
+			<img src="ar experience.jpeg" alt="ar experience" rel="ar">
+		</a>
+		<p>This AR experience shows how many snacks are given per box in SnackShack.!</p>
+	</div>
+	
 </body>
 </html>
