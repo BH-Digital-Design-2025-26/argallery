@@ -1,43 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Student AR Project</title>
-	<style>
-		body {
-			background-color: rgb(208, 208, 208);
-			font-family: Trebuchet MS;
-			text-align: center;
-		}
-		img {
-			width: 200px;
-			height: auto;
-		}
-	    /* New style for the container of the boxes */
-	    .container {
-	        display: flex; /* Enables flex context for children */
-	        justify-content: center; /* Centers the boxes horizontally in the container */
-	        gap: 20px; /* Adds space between the boxes (e.g., 20px) */
-	        padding: 20px; /* Optional: Adds some space around the container */
-	    }
-	    /* Modified .box style */
-	    .box {
-			background-color: white;
-			padding: 20px;
-			width: 220px;
-			/* Removed 'margin: 0 auto;' as Flexbox handles centering now */
-		}
-	</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snuggle Bugs</title>
+
+  <!-- Cute rounded font -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Baloo 2', cursive;
+      background: linear-gradient(135deg, #ffd6e8, #e0f7f4, #fff1c1);
+      background-size: 300% 300%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .card {
+  display: flex;          
+  flex-direction: column;  
+  align-items: center;     
+  justify-content: center; 
+  background: rgba(255, 255, 255, 0.82);
+  border-radius: 32px;
+  padding: 3rem 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.08),
+    inset 0 0 30px rgba(255, 255, 255, 0.6);
+  position: relative;
+}
+
+    .card::before,
+    .card::after {
+      content: "♡";
+      position: absolute;
+      font-size: 2rem;
+      color: #f9a8d4;
+      opacity: 0.6;
+    }
+
+    .card::before {
+      top: -12px;
+      left: 20px;
+    }
+
+    .card::after {
+      bottom: -12px;
+      right: 20px;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      color: #7c5cc4;
+      margin-bottom: 1.2rem;
+    }
+
+    .box {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1;       
+  border-radius: 26px;
+  background: linear-gradient(135deg, #fde2f3, #e0e7ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+  box-shadow: inset 0 0 18px rgba(255, 255, 255, 0.7);
+  overflow: hidden;     
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      
+  border-radius: 20px;  
+    }
+
+    .box span {
+      color: #9a8fbf;
+      font-size: 1rem;
+    }
+
+    .slogan {
+      font-size: 1.15rem;
+      color: #6b7280;
+      letter-spacing: 0.03em;
+    }
+
+    .sparkles {
+      margin-top: 0.8rem;
+      font-size: 1.2rem;
+      color: #fbbf24;
+    }
+  </style>
 </head>
 <body>
-	<h1>Student AR Project</h1>
-    <div class="container">
-    	<div class="box">
-			<a href="Snugglebugs2.reality">
-				<img src="placeholder.png" alt="placeholder" rel="ar">
-			</a>
-        	<p>Click the image to view in AR on an iPad or iPhone.</p>
-		</div>
-    
-    </div>
+  <div class="card">
+    <h1>Snuggle Bugs</h1>
+
+    <div class="box">
+      <a href="Snugglebugs2.reality">
+  <img 
+    src="snugglebugs.png" 
+    alt="Snuggle Bugs"
+    class="main-image"
+    rel="ar"
+  />
+  </a>
+</div>
+
+    <p class="slogan">
+      with love · with hugs · with snuggle bugs
+    </p>
+
+    <div class="sparkles">✿ ♡ ✨ ♡ ✿</div>
+  </div>
 </body>
 </html>
