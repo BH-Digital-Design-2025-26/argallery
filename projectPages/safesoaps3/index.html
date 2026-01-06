@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Student AR Project</title>
-	<style>
-		body {
-			background-color: rgb(208, 208, 208);
-			font-family: Trebuchet MS;
-			text-align: center;
-		}
-		img {
-			width: 200px;
-			height: auto;
-		}
-	    /* New style for the container of the boxes */
-	    .container {
-	        display: flex; /* Enables flex context for children */
-	        justify-content: center; /* Centers the boxes horizontally in the container */
-	        gap: 20px; /* Adds space between the boxes (e.g., 20px) */
-	        padding: 20px; /* Optional: Adds some space around the container */
-	    }
-	    /* Modified .box style */
-	    .box {
-			background-color: white;
-			padding: 20px;
-			width: 220px;
-			/* Removed 'margin: 0 auto;' as Flexbox handles centering now */
-		}
-	</style>
+  <title>SafeSoapsPage</title>
+
+  <style>
+    body { 
+      background-image: url("beachy.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: Tahoma, sans-serif;
+      color: darkblue;
+      text-align: center;
+    }
+
+    img {
+      width: 250px;
+      height: auto;
+    }
+
+    .box {
+      background-color: white;
+      padding: 20px;
+      width: 270px;
+      margin: 100px auto; /* centers the box */
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* optional: looks nicer */
+    }
+  </style>
 </head>
+
 <body>
-	<h1>Student AR Project</h1>
-    <div class="container">
-    	<div class="box">
-			<a href="safesoaps3.reality">
-				<img src="placeholder.png" alt="placeholder" rel="ar">
-			</a>
-        	<p>Click the image to view in AR on an iPad or iPhone.</p>
-		</div>
-    
-    </div>
+
+  <h1>SafeSoaps</h1>
+
+  <div class="box">
+    <a href="safesoaps3.reality">
+
+      <img src="safesoapslogo.png" alt="SafeSoaps AR Experience">
+    </a>
+
+    <p>
+      Safe Soaps is an organic, biodegradable soap company! Half of our profits go to Red Door Women’s Shelter, so come support us at our limited edition Christmas Sale!
+    </p>
+
+    <p>
+      <em>*Click on the image to view the SafeSoaps AR experience (iPhone/iPad only)</em>
+    </p>
+  </div>
+
 </body>
 </html>
